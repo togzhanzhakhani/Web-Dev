@@ -1,0 +1,12 @@
+table .emperor {
+    font-family: cursive;
+    background-color:rgb(218, 183, 247);
+}
+
+table .reign {
+    font-family: monospace;
+    background-color:rgb(245, 231, 191);
+}
+table{
+    line-height:30px;
+}
