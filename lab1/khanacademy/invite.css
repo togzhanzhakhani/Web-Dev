@@ -1,0 +1,16 @@
+.acc{
+    color:blue;
+}
+body{
+    background-color:rgb(235, 232, 235);
+    border:ridge rgb(245, 211, 137) 5px;
+    text-align:center;
+}
+#l{
+    text-align:justify;
+}
+#ff{
+    color:blue;
+    font-size:18px;
+    font-family:monospace;
+}
