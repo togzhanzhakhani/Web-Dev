@@ -1,0 +1,48 @@
+<h2 *ngIf="products" style="font-size: 30px;">{{products[0].category}}</h2>
+<div *ngFor="let product of products" style="display: inline-grid; margin-right: 40px;">
+    <!--
+<div *ngFor="let product of products" style="display: inline-grid; margin-right: 40px;">
+    <h3>
+        <a [title]="product.name + ' details'"
+            [routerLink]="['/products', product.id]">
+            {{ product.name }}
+        </a>
+    </h3>  
+
+    <img src="{{ product.image }}" alt="prod-image" height="200px">
+    <p *ngIf="product.description" style="width: 300px;">
+        Description: {{ product.description }}
+    </p>
+
+    <button type="button" (click)="share(product)" style="width: max-content;">
+        Share
+    </button>
+-->
+    <!--<app-product-alerts
+        [product]="product" 
+        (notify)="onNotify()">
+    </app-product-alerts>-->
+    <h3 style="text-align: center;">
+        <a [title]="product.name + ' details'"
+            [routerLink]="['/products', product.id]">
+            {{ product.name }}
+        </a>
+    </h3>  
+
+    <img src="{{ product.image }}" alt="prod-image" height="200px" style="margin-left: auto; margin-right: auto;">
+    <p *ngIf="product.description" style="width: 300px;">
+        Description: {{ product.description }}
+    </p>
+    <div>
+    <button type="button" (click)="share(product)" style="width: max-content;">
+        Share
+    </button>
+
+    <button type="button" (click)="delete(product.id)" style="width: max-content; margin-left: 100px; background-color: brown;" >
+        Delete
+    </button>
+    </div>
+    <button type="button" (click)="like(product)" style="width: max-content; margin-top: 10px; background-color: rgb(247, 98, 135);" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Facebook_like_thumb.png/1196px-Facebook_like_thumb.png" height="18px" style="margin-right: 5px;"> Like {{product.likes}}
+    </button>
+</div>

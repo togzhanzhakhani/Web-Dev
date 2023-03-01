@@ -1,0 +1,24 @@
+<!--<div id="cats" *ngfor="let category of categories">
+
+    <h3>
+        <a [title]="category.name + ' details'"
+            [routerLink]="['/categories', category.id]">
+            {{ category.name }}
+        </a>
+    </h3>
+-->
+<div>
+<button *ngFor="let category of category" type="button" (click)="Selected(category.name)" style="margin-left: 10px; margin-top: 20px; font-size: 25px;">
+    {{category.name}}
+</button>
+</div>
+<!--
+<a *ngFor="let category of category"
+            [routerLink]="['/productlist', category.id]">j
+</a>
+
+<div *ngfor="currentCategory != undefined">
+    <app-product-list [category]="currentCategory.name"></app-product-list>
+</div>
+
+<app-product-list></app-product-list>-->
