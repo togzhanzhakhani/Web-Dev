@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>My Albums</h1>
+    <p>Select an album to view its details and photos, or create a new album.</p>
+    <div class="card-deck">
+      <div class="card" *ngFor="let album of albums">
+        <img class="card-img-top" alt="{{ album.title }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ album.title }}</h5>
+          <a [routerLink]="['/albums', album.id]" class="btn btn-primary">Details</a>
+          <button (click)="deleteAlbum(album.id)" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+    <br>
+    <a [routerLink]="['/albums', 'new']" class="btn btn-success">Create New Album</a>
+  </div>

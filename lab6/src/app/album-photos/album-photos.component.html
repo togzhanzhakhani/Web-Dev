@@ -1,0 +1,5 @@
+<h2>{{ album.title }} Photos</h2>
+<div *ngFor="let photo of photos">
+  <img src="{{ photo.url }}" alt="{{ photo.title }}">
+</div>
+<button (click)="goBack()">Return back</button>

@@ -1,0 +1,15 @@
+<div class="album-detail">
+    <h2>Album Detail</h2>
+    <div *ngIf="album">
+      <p><strong>ID:</strong> {{ album.id }}</p>
+      <p>
+        <strong>Title:</strong>
+        <span *ngIf="!isEditing">{{ album.title }}</span>
+        <input *ngIf="isEditing" type="text" [(ngModel)]="album.title" />
+      </p>
+      <button *ngIf="!isEditing" (click)="isEditing = true">Edit</button>
+      <button *ngIf="isEditing" (click)="saveAlbum()">Save</button>
+      <button (click)="goBack()">Return back</button>
+      <a [routerLink]="['/albums', album.id, 'photos']">Photos</a>
+    </div>
+  </div>
