@@ -1,0 +1,65 @@
+/* Центрирование элементов */
+  body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  /* Изменение размера текста */
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Стилизация ссылок */
+  a {
+    color: #fdf9f9;
+    text-decoration: none;
+    font-size: 18px;
+    background: linear-gradient(to right, #fb9f94, #f8c659);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    background: linear-gradient(to right, #f6c65e, #f2978d);
+    transform: scale(1.1);
+  }
+  
+  /* Задний фон */
+  body {
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    color: #292727;
+    font-family: Arial, sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display:list-item;
+    margin-right: 20px;
+  }
+  
+  button {
+    background-color: #f94242;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ba2626;
+  }

@@ -1,0 +1,13 @@
+<div *ngIf="company">
+    <h2>{{ company.name }}</h2>
+    <p>{{ company.description }}</p>
+    <p>City: {{ company.city }}</p>
+    <p>Address: {{ company.address }}</p>
+  
+    <a routerLink="/companies/{{company.id}}/vacancies">Vacancies for company {{ company.name }}</a>
+</div>
+  
+<div *ngIf="!company">
+    <p>Loading company details...</p>
+</div>
+  

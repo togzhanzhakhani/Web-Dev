@@ -1,0 +1,11 @@
+<div *ngIf="vacancy">
+    <h2>{{ vacancy.name }}</h2>
+    <p>Description: {{ vacancy.description }}</p>
+    <p>Salary: {{ vacancy.salary }}</p>
+    <p>Company: {{ vacancy.company }}</p>
+  </div>
+  
+  <div *ngIf="!vacancy">
+    Loading vacancy...
+  </div>
+  

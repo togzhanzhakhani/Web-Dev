@@ -1,0 +1,8 @@
+<h2>Vacancies</h2>
+<ul>
+  <li *ngFor="let vacancy of vacancies" style="margin-bottom: 2%;">
+    <a routerLink="/vacancies/{{vacancy.id}}">{{vacancy.name}}</a>
+  </li>
+</ul>
+<a routerLink="/vacancies/top-ten">Top 10 Vacancies</a>
+
